@@ -10,10 +10,10 @@ The pipeline separates raw accelerometer signals into gravitational and dynamic 
 
 | Metric | Value |
 |--------|-------|
-| Validation | Leave-One-Subject-Out (LOSO) |
+| Validation | Stratified 5-Fold |
 | Classifier | SVM RBF (C=10, gamma=scale) |
-| Overall Accuracy | (run pipeline to obtain) |
-| Macro F1 | (run pipeline to obtain) |
+| Overall Accuracy | 90.91% |
+| Macro F1 | 0.4307  |
 | Features | 95 gravity-normalized features per window |
 
 Note: Results depend on the specific dataset split used. Run 03_classification_loso.ipynb to reproduce.
